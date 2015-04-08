@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "opn": "~1.0.1",
+    "gulp": "~3.8.11",
+    "gulp-connect": "~2.2.0"
+  }
+}
