@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "dependencies": {
-    "jquery": "1.11"
+    "jquery": "1.11",
+    "normalize.css": "~3.0.3"
   }
 }
