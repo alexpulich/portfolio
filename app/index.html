@@ -15,9 +15,173 @@
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/about-me-page.css">
 </head>
 <body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="page-header">
+            <div class="header-wrap">
+                <a href="/" class="logo-link">
+                    <img src="img/logo.png" alt="Веб-разработчик Пулич Алексей" class="logo-img">
+                </a>
+                <ul class="social">
+                    <li class="social-item">
+                        <a href="http://vk.com" class="social-item-link" target="_blank">VK</a>
+                    </li>
+                    <li class="social-item">
+                        <a href="http://twitter.com" class="social-item-link" target="_blank">Twitter</a>
+                    </li>
+                    <li class="social-item">
+                        <a href="http://facebook.com" class="social-item-link" target="_blank">Facebook</a>
+                    </li>
+                    <li class="social-item">
+                        <a href="http://github.com" class="social-item-link" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>            
+        </header>
+
+        <div class="container">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- main navigation -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="/" class="nav-list-link">Обо мне</a></li>
+                        <li class="nav-list-item"><a href="/" class="nav-list-link">Мои работы</a></li>
+                        <li class="nav-list-item"><a href="/" class="nav-list-link">Связаться со мной</a></li>
+                    </ul>
+                </nav>
+
+                <!-- contacts -->
+                <address class="contacts">
+                    <div class="contacts-header">
+                        Контакты
+                    </div>
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <a href="mailto:alexpulich@gmail.com" class="contacts-list-link mail-link">alexpulich@gmail.com</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="tel:+79811241091" class="contacts-list-link">+7981241091</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="skype:a.blend?chat" class="contacts-list-link">a.blend</a>
+                        </li>
+                    </ul>
+                </address>
+            </aside>
+
+            <div class="main-content">
+                <section class="box">
+                    <div class="box-header">
+                        Основная информация
+                    </div>
+                    <div class="box-body clearfix">
+                        <div class="box-photo">
+                            <div class="photo-wrap">
+                                <img src="img/me.jpg" alt="Пулич Алексей" class="myphoto">
+                            </div>
+                        </div>
+                        <ul class="about-info">
+                            <li class="about-info-item">
+                                <div class="about-info-item-heading">Меня зовут:</div>
+                                <div class="about-info-item-content">Пулич Алексей Алексеевич</div>
+                            </li>
+                            <li class="about-info-item">
+                                <div class="about-info-item-heading">Мой возраст:</div>
+                                <div class="about-info-item-content">19</div>
+                            </li>
+                            <li class="about-info-item">
+                                <div class="about-info-item-heading">Мой город:</div>
+                                <div class="about-info-item-content">Санкт-Петербург, Россия</div>
+                            </li>
+                            <li class="about-info-item">
+                                <div class="about-info-item-heading">Моя специализация</div>
+                                <div class="about-info-item-content">Frontend/Backend разработчик</div>
+                            </li>
+                            <li class="about-info-item">
+                                <div class="about-info-item-heading">Ключевые навыки</div>
+                                <div class="about-info-item-content">
+                                    <ul class="skills">
+                                        <li class="skills-item">html</li>
+                                        <li class="skills-item">css</li>
+                                        <li class="skills-item">javascript</li>
+                                        <li class="skills-item">php</li>
+                                        <li class="skills-item">gulp</li>
+                                        <li class="skills-item">git</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="box">
+                    <div class="box-header">
+                        Опыт работы
+                    </div>
+                    <div class="box-body clearfix">
+                        <ul class="box-list">
+                            <li class="box-list-item work">
+                                <div class="place">
+                                    Фриланс
+                                </div>
+                                <div class="duration">
+                                    Январь 2015 - по настоящее время
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="box">
+                    <div class="box-header">
+                        Образование
+                    </div>
+                    <div class="box-body clearfix">
+                        <ul class="box-list">
+                            <li class="box-list-item uni">
+                                <div class="place">
+                                    Незаконченное высшее. Университет ИТМО
+                                </div>
+                                <div class="duration">
+                                    Сентябрь 2014 - по настоящее время
+                                </div>
+                            </li>
+                            <li class="box-list-item uni">
+                                <div class="place">
+                                    Курсы Loftschool.ru
+                                </div>
+                                <div class="duration">
+                                    Апрель 2015 - по настоящее время
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="login">
+                <a href="/" class="login-link">Войти</a>
+            </div>
+            <div class="copyright">
+                &#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его. 
+            </div>
+        </div>
+    </footer>
     
+
+
+
+    <!-- scripts -->
+    <!-- vendor js -->
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
 </body>
 </html>
