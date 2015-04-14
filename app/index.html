@@ -15,8 +15,17 @@
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+        <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+        
     <div class="wrapper">
         <!-- header -->
         <header class="page-header">
@@ -26,16 +35,16 @@
                 </a>
                 <ul class="social">
                     <li class="social-item">
-                        <a href="http://vk.com" class="social-item-link" target="_blank">VK</a>
+                        <a href="http://vk.com" class="social-item-link vk" target="_blank">VK</a>
                     </li>
                     <li class="social-item">
-                        <a href="http://twitter.com" class="social-item-link" target="_blank">Twitter</a>
+                        <a href="http://twitter.com" class="social-item-link tw" target="_blank">Twitter</a>
                     </li>
                     <li class="social-item">
-                        <a href="http://facebook.com" class="social-item-link" target="_blank">Facebook</a>
+                        <a href="http://facebook.com" class="social-item-link fb" target="_blank">Facebook</a>
                     </li>
                     <li class="social-item">
-                        <a href="http://github.com" class="social-item-link" target="_blank">GitHub</a>
+                        <a href="http://github.com" class="social-item-link gh" target="_blank">GitHub</a>
                     </li>
                 </ul>
             </div>            
@@ -47,9 +56,14 @@
                 <!-- main navigation -->
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li class="nav-list-item"><a href="/" class="nav-list-link">Обо мне</a></li>
-                        <li class="nav-list-item"><a href="/" class="nav-list-link">Мои работы</a></li>
-                        <li class="nav-list-item"><a href="/" class="nav-list-link">Связаться со мной</a></li>
+                        <li class="nav-list-item active">   <a href="/" class="nav-list-link">Обо мне</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="/" class="nav-list-link">Мои работы</a>
+                        </li>
+                        <li class="nav-list-item last-nav-list-item">
+                            <a href="/" class="nav-list-link">Связаться со мной</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -59,14 +73,14 @@
                         Контакты
                     </div>
                     <ul class="contacts-list">
-                        <li class="contacts-list-item">
+                        <li class="contacts-list-item mail">
                             <a href="mailto:alexpulich@gmail.com" class="contacts-list-link mail-link">alexpulich@gmail.com</a>
                         </li>
-                        <li class="contacts-list-item">
-                            <a href="tel:+79811241091" class="contacts-list-link">+7981241091</a>
+                        <li class="contacts-list-item phone">
+                            <a href="tel:+79811241091" class="contacts-list-link phone-link">+79811241091</a>
                         </li>
-                        <li class="contacts-list-item">
-                            <a href="skype:a.blend?chat" class="contacts-list-link">a.blend</a>
+                        <li class="contacts-list-item skype">
+                            <a href="skype:a.blend?chat" class="contacts-list-link skype-link">a.blend</a>
                         </li>
                     </ul>
                 </address>
@@ -78,7 +92,7 @@
                         Основная информация
                     </div>
                     <div class="box-body clearfix">
-                        <div clast"box-photo">
+                        <div class="box-photo">
                             <div class="photo-wrap">
                                 <img src="img/me.jpg" alt="Пулич Алексей" class="myphoto">
                             </div>
@@ -90,18 +104,18 @@
                             </li>
                             <li class="about-info-item">
                                 <div class="about-info-item-heading">Мой возраст:</div>
-                                <div class="about-info-item-content">19</div>
+                                <div class="about-info-item-content">19 лет</div>
                             </li>
                             <li class="about-info-item">
                                 <div class="about-info-item-heading">Мой город:</div>
                                 <div class="about-info-item-content">Санкт-Петербург, Россия</div>
                             </li>
                             <li class="about-info-item">
-                                <div class="about-info-item-heading">Моя специализация</div>
+                                <div class="about-info-item-heading">Моя специализация:</div>
                                 <div class="about-info-item-content">Frontend/Backend разработчик</div>
                             </li>
                             <li class="about-info-item">
-                                <div class="about-info-item-heading">Ключевые навыки</div>
+                                <div class="about-info-item-heading">Ключевые навыки:</div>
                                 <div class="about-info-item-content">
                                     <ul class="skills">
                                         <li class="skills-item">html</li>
@@ -149,7 +163,7 @@
                                     Сентябрь 2014 - по настоящее время
                                 </div>
                             </li>
-                            <li class="box-list-item uni">
+                            <li class="box-list-item course">
                                 <div class="place">
                                     Курсы Loftschool.ru
                                 </div>
