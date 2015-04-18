@@ -7,3 +7,11 @@
 	bottom: 0;
 }
 /*end  fix for projects hover effect*/
+
+.contacts-form-input {
+	padding-top: 12px;
+}
+
+.login-form-input {
+	padding-top: 20px;
+}
