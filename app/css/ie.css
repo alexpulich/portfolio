@@ -1,0 +1,9 @@
+/* fix for projects hover effect*/
+.project-pic-wrap .project-hover {
+	bottom: -500px;
+}
+
+.project-pic-wrap:hover .project-hover {
+	bottom: 0;
+}
+/*end  fix for projects hover effect*/

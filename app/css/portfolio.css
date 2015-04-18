@@ -1,0 +1,347 @@
+.box-header {
+	padding: 25px 24px 22px 26px;
+	margin-bottom: 34px;
+}
+
+.box-body{
+	padding-left: 21px;
+	padding-bottom: 23px;
+}
+	
+.projects {
+	list-style: none;
+}
+
+.projects .projects-item {
+	float: left;
+	width: 183px;
+	margin-right: 30px;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+.projects-item .project-preview {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 8px;
+}
+
+.project-preview .project-pic-wrap {
+	position: relative;
+	width: 181px;
+	height: 127px;
+	margin-bottom: 9px;
+	overflow: hidden;
+}
+
+.project-pic-wrap .project-pic {
+	width: 100%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 2px solid #3ba8c0;
+}
+
+.project-pic-wrap .project-hover {
+	position: absolute;
+	bottom: 0;
+	transition:all 0.3s ease;
+	opacity:0;
+	background: rgb(65, 145, 187);
+	background: rgba(65, 145, 187, 0.7);
+	width: 177px;
+	margin-left: 2px;
+	padding-top: 60px;
+	height: 125px;
+}
+
+.project-hover .project-hover-text {
+	border: 2px solid #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 0 2px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.project-pic-wrap:hover .project-hover {
+	opacity: 1;
+}
+
+.project-preview .project-title {
+	font-family: "fira_sanslight_italic";
+	font-size: 13px;
+	color: #3ba8c0;
+}
+
+.projects-item .project-desc {
+	width: 175px;
+	margin: 0 auto;
+}
+
+.project-pic-wrap.add-project {
+	border: 1px dashed #3ba8c0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: url("../img/add-site.png") center 34px no-repeat;
+	padding-top: 77px;
+	text-decoration: none;
+	color: #3ba8c0;
+	font-size: 13px;
+}
+
+
+/*popup*/
+.popup-bg {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: rgba(0,132,161,0.4);
+	z-index: 9999;
+}
+
+.add-project-popup {
+	/*display: none;*/
+	position: relative;
+	width: 362px;
+	height: 493px;
+	margin: 0 auto;
+	margin-top: 4%;
+	background: #eff3f7;
+	overflow: hidden;
+	z-index: 999;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-header {
+	position: relative;
+	padding-left: 14px;
+	padding-top: 16px;
+	margin-bottom: 11px;
+	height: 53px;
+	background: #48cbe8;
+	border-bottom: 9px solid #67dffa;
+}
+
+.popup-header .popup-title{
+	color: #fff;
+	font-size: 25px;
+	font-family: "fira_sansregular";
+}
+
+.popup-header .close-popup {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	width: 25px;
+	height: 25px;
+	background: url("../img/close.png") no-repeat;
+}
+
+.popup-body {
+	width: 320px;
+	margin: 0 auto;
+	font-size: 17px;
+	overflow: hidden;
+}
+
+.popup-error {
+	display: none;
+	position: relative;
+	background: #f2cccd;
+	border: 1px solid #f97e76;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #f97e76;
+	padding: 7px 9px;
+	margin-bottom: 10px;
+}
+
+.popup-error .error-heading {
+	margin-bottom: 5px;
+}
+
+.popup-error .error-title {
+	font-size: 23px;
+}
+
+.popup-error .error-body {
+	font-size: 15px;
+}
+
+.close-error {
+	cursor: pointer;	
+	position: absolute;
+	right: 4px;
+	top: 5px;
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: url("../img/close-err.png") no-repeat;
+}
+
+.form-part {
+	margin-bottom: 12px;
+}
+
+.popup-body .form-label {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.popup-body .form-input {
+	display: block;
+	width: 100%;
+	color: #48cbe8;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 9px 8px;
+	font-family: "fira_sanslight";
+	font-size: 13px;
+}
+
+.popup-body .form-input:focus {
+	outline: none;
+}
+
+.popup-body .form-input.form-submit {
+	width: 140px;
+	height: 33px;
+	background: #48cbe8;
+	color: #fff;
+	margin: 0 auto;
+	border: 0;
+	border-bottom: 3px solid #3ba8c0;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding-top: 3px;
+	font-size: 19px;
+	font-family: "fira_sansbook"
+}
+
+.popup-body .form-input::-webkit-input-placeholder{color: #3ba8c0;}
+.popup-body .form-input::-moz-placeholder{color: #3ba8c0;}
+.popup-body .form-input:-moz-placeholder{color: #3ba8c0;}
+.popup-body .form-input:-ms-input-placeholder{color: #3ba8c0;}
+
+.popup-box {
+	position: relative;
+	margin: 0 auto;
+	width: 362px;
+}
+
+
+/*success popup*/
+.popup-success {
+	display: none;
+	position: absolute;
+	width: 362px;
+	margin: 0 auto;
+	margin-top: 50%;
+	background: #eff3f7;
+	overflow: hidden;
+	z-index: 9999;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-success .success-wrap{
+	display: block;
+	margin: 21px auto;
+	width: 320px;
+	background: #b8e1ce;
+	border: 1px solid #49bb7b;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #49bb7b;
+	padding: 7px 9px;
+}
+
+.success-wrap .success-heading {
+	margin-bottom: 5px;
+	position: relative;
+}
+
+.success-wrap .success-title {
+	font-size: 23px;
+}
+
+.success-error .success-body {
+	font-size: 15px;
+}
+
+.close-success {
+	cursor: pointer;
+	position: absolute;
+	right: -3px;
+	top: -4px;
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: url("../img/close-succ.png") no-repeat;
+}
+
+/* Here is hardcode for styling file input*/
+.fake-wrap {
+	position: relative;
+}
+.mask {
+	position: relative
+}
+
+.send-file {
+	background: #48cbe8 url("../img/add-pic.png") center center no-repeat;
+	height: 38px;
+	width: 51px;
+	outline: none;
+	border: 0;
+	float: right;
+	position:absolute;
+	right:0;
+}
+
+.file-input-text {
+	width: 272px;
+	margin:0;
+	background: #fff;
+	color: #48cbe8;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 7px 8px;
+	padding-top: 8px;
+	font-family: "fira_sanslight";
+	font-size: 13px;
+}
+
+.form-input[type="file"] {
+	width: 318px;
+	position: absolute;
+	top: 0;
+	opacity: -1;
+	filter: alpha(opacity=0);
+	z-index: 99999;
+	cursor: pointer;
+}
+
+/* Uff, the end of hardcode*/

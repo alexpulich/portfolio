@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Портфолио</title>
+    <!-- SEO -->
+    <meta name="description" content="Сайт-портфолио веб-разработчика Пулич Алексея">
+    <meta name="keywords" content="Веб-разработка, портфолио, многочегоещё">
+    <meta name="author" content="Пулич Алексей">
+    <!-- vendor CSS -->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <!-- fonts CSS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="css/ie.css" />
+    <![endif]-->
+
+    <!-- Modernizr.JS -->
+    <script src="bower/modernizr/modernizr.js"></script>
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+        <![endif]-->
+
+        <!-- popup bg -->
+    <div class="popup-bg" id="popup-project">
+        <!-- popup -->
+        <div class="popup-box">
+        <div class="popup-success">
+                <div class="success-wrap">
+                    <div class="success-heading">
+                        <span class="success-title">
+                            Ура!
+                        </span>
+                        <a class="close-success">
+                        </a>
+                    </div>
+                    <div class="success-body">
+                        Проект успешно добавлен
+                    </div>
+                </div>
+            </div>
+        <div class="add-project-popup" id="add-project-popup">
+            <div class="popup-header">
+                <div class="popup-title">Добавление проекта</div>
+                <a href="javascript:PopUpHide()" class="close-popup"></a>
+            </div>
+            <div class="popup-body">
+                <div class="popup-error">
+                    <div class="error-heading">
+                        <span class="error-title">
+                            Ошибка!
+                        </span>
+                        <a class="close-error">
+                        </a>
+                    </div>
+                    <div class="error-body">
+                        Невозможно добавить проект.
+                    </div>
+                </div>
+                <form action="" method="post" name="add-project-form">
+                <div class="form-part">
+                    <label class="form-label" for="project_name">Название проекта</label>
+                    <input class="form-input" type="text" name="project_name" id="project_name" placeholder="Введите название">
+                </div>
+                <div class="form-part">    
+                    <label class="form-label" for="project_img ">Картинка проекта</label>
+                    <div class="fake-wrap">
+                        <div class="mask">
+                              <input class="file-input-text" type="text" disabled value="Загрузите изображение">
+                              <button class="send-file"></button>
+                           </div>
+                        <input class="form-input" type="file" name="upload" id="upload" placeholder="Загрузите изображение">
+                    </div>
+                </div>
+                <div class="form-part">
+                    <label class="form-label" for="project_url">URL проекта</label>
+                    <input class="form-input" type="text" name="project_url" id="project_url" placeholder="Добавьте ссылку">
+                </div>
+                <div class="form-part">   
+                    <label class="form-label" for="project_desc">Описание</label>
+                    <textarea class="form-input" name="project_desc" id="project_desc" placeholder="Пара слов о вашем проекте" cols="33" rows="5"></textarea>
+                </div>
+                <div class="form-part">
+                    <input class="form-input form-submit" type="submit" name="submit-project" id="submit-project" value="Добавить">
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <!-- end popup -->
+    </div>
+
+
+    <div class="wrapper">
+        <!-- header -->
+        <header class="page-header">
+            <div class="header-wrap">
+                <a href="/" class="logo-link">
+                    <img src="img/logo.png" alt="Веб-разработчик Пулич Алексей" class="logo-img">
+                </a>
+                <ul class="social">
+                    <li class="social-item">
+                        <a href="http://vk.com" class="social-item-link vk" target="_blank">VK</a>
+                    </li>
+                    <li class="social-item">
+                        <a href="http://twitter.com" class="social-item-link tw" target="_blank">Twitter</a>
+                    </li>
+                    <li class="social-item">
+                        <a href="http://facebook.com" class="social-item-link fb" target="_blank">Facebook</a>
+                    </li>
+                    <li class="social-item">
+                        <a href="http://github.com" class="social-item-link gh" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>            
+        </header>
+
+        <div class="container">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <!-- main navigation -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a href="/" class="nav-list-link">Обо мне</a>
+                        </li>
+                        <li class="nav-list-item active">
+                            <a href="/portfolio.html" class="nav-list-link">Мои работы</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="/contacts.html" class="nav-list-link">Связаться со мной</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- contacts -->
+                <address class="contacts">
+                    <div class="contacts-header">
+                        Контакты
+                    </div>
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item mail">
+                            <a href="mailto:alexpulich@gmail.com" class="contacts-list-link mail-link">alexpulich@gmail.com</a>
+                        </li>
+                        <li class="contacts-list-item phone">
+                            <a href="tel:+79811241091" class="contacts-list-link phone-link">+79811241091</a>
+                        </li>
+                        <li class="contacts-list-item skype">
+                            <a href="skype:a.blend?chat" class="contacts-list-link skype-link">a.blend</a>
+                        </li>
+                    </ul>
+                </address>
+            </aside>
+
+            <div class="main-content">
+                <section class="box">
+                    <div class="box-header">
+                        Мои работы
+                    </div>
+                    <div class="box-body clearfix">
+                        <ul class="projects">
+                            <li class="projects-item">
+                                <a class="project-preview" href="">
+                                    <div class="project-pic-wrap">
+                                        <img class="project-pic" src="img/projects/site1.jpg" alt="крутой сайт">
+                                        </img>
+                                        <div class="project-hover">
+                                            <span class="project-hover-text">Крутой сайт!</span>
+                                        </div>
+                                    </div>
+                                    <span class="project-title">
+                                        www.site.ru
+                                    </span>
+                                </a>
+                                <div class="project-desc">
+                                    Информация о проекте 1 превью 2 строки...
+                                </div>
+                            </li>
+                            <li class="projects-item">
+                                <a class="project-preview" href="">
+                                    <div class="project-pic-wrap">
+                                        <img class="project-pic" src="img/projects/site2.jpg" alt="крутой сайт">
+                                        </img>
+                                        <div class="project-hover">
+                                            <span class="project-hover-text">Крутой сайт!</span>
+                                        </div>
+                                    </div>
+                                    <span class="project-title">
+                                        www.site.ru
+                                    </span>
+                                </a>
+                                <div class="project-desc">
+                                    Информация о проекте 1 превью 2 строки...
+                                </div>
+                            </li>
+                            <li class="projects-item">
+                                <a class="project-preview" href="">
+                                    <div class="project-pic-wrap">
+                                        <img class="project-pic" src="img/projects/site3.jpg" alt="крутой сайт">
+                                        </img>
+                                        <div class="project-hover">
+                                            <span class="project-hover-text">Крутой сайт!</span>
+                                        </div>
+                                    </div>
+                                    <span class="project-title">
+                                        www.site.ru
+                                    </span>
+                                </a>
+                                <div class="project-desc">
+                                    Информация о проекте 1 превью 2 строки...
+                                </div>
+                            </li>
+                            <li class="projects-item">
+                                <a class="project-preview" href="">
+                                    <div class="project-pic-wrap">
+                                        <img class="project-pic" src="img/projects/site4.jpg" alt="крутой сайт">
+                                        </img>
+                                        <div class="project-hover">
+                                            <span class="project-hover-text">Крутой сайт!</span>
+                                        </div>
+                                    </div>
+                                    <span class="project-title">
+                                        www.site.ru
+                                    </span>
+                                </a>
+                                <div class="project-desc">
+                                    Информация о проекте 1 превью 2 строки...
+                                </div>
+                            </li>
+                            <li class="projects-item">
+                                <a class="project-preview" href="javascript:PopUpShow()">
+                                    <div class="project-pic-wrap add-project">
+                                        Добавить проект
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="projects-item add-item">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="login">
+                <a href="/" class="login-link">Войти</a>
+            </div>
+            <div class="copyright">
+                &#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его. 
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+    
+    <!-- scripts -->
+    <!-- vendor js -->
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+</body>
+</html>
