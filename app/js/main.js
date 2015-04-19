@@ -1,27 +1,75 @@
-//fix for IE8 to make projects seem 3-inline
-$(".projects-item:nth-child(3n)").css("margin-right", "0");
+//fix for fake upload placeholder
+var UploadFix = (function() {
+  
+  function _setUpListeners() {
+    $('#upload').on('change', _showPlaceholder);
+  }
 
-//fix for fake upload pic placeholder
-$(document).ready(function() {
-   $('#upload').on('change', function() {
-      var realVal = $(this).val();
-      var lastIndex = realVal.lastIndexOf('\\') + 1;
-      if(lastIndex !== -1) {
-         realVal = realVal.substr(lastIndex);
-         $(this).prev('.mask').find('.file-input-text').val(realVal);
-      }
-   });
-});
+  function _showPlaceholder(ev) {
+    ev.preventDefault();
+
+    var realVal = $(this).val(),
+        lastIndex = realVal.lastIndexOf('\\') + 1;
+
+    if (lastIndex !== -1) {
+      realVal = realVal.substr(lastIndex);
+      $(this).prev('.mask').find('.file-input-text').val(realVal);
+    }
+  }
+
+  return {
+    init: function() {
+      _setUpListeners();
+    }
+  }
+  
+})();
+
+
+//margin fixing for 3rd element in IE
+var Projects = (function() {
+  var _thirdChild = $(".projects-item:nth-child(3n)");
+
+  function _fixMargin() {
+    _thirdChild.css("margin-right", "0");
+  }
+
+  return {
+    init: function() {
+      _fixMargin();
+    }
+  }
+
+})();
+
+
+//Popup showind and hiding module
+var Popup = (function() {
+  var _popup = $('#popup-project');
+  
+  function _popupShow() {
+    _popup.fadeIn(300);
+  }
+  
+  function _popupHide() {
+    _popup.fadeOut(300);
+  }
+
+  return {
+    show: function() {
+      _popupShow();
+    },
+
+    hide: function() {
+      _popupHide();
+    }
+  }
+
+})();
+
 
 $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
+  Projects.init();
+  Popup.hide();
+  UploadFix.init();
 });
-//Функция отображения PopUp
-function PopUpShow(){
-  $("#popup-project").fadeIn(300);
-}
-//Функция скрытия PopUp
-function PopUpHide(){
-  $("#popup-project").fadeOut(300);
-}
