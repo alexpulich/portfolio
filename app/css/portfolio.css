@@ -20,6 +20,10 @@
 	text-align: center;
 }
 
+.projects-item:nth-child(3n) {
+	margin-right: 0;
+}
+
 .projects-item .project-preview {
 	display: block;
 	text-decoration: none;
