@@ -298,3 +298,20 @@ body {
 .container:after, .clearfix:after {
     clear: both;
 }
+
+.qtip-mystyle{
+	background-color: #f97e76;
+	border-color: #f97e76;
+	font-family: 'fira_sansbook';
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.error-input {
+	background: #fdd5d2 !important;
+	border: 1px solid #f97e76 !important;
+}
+
+.error-fake-input {
+	background: #fdd5d2 !important;
+}
