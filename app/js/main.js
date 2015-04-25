@@ -320,7 +320,7 @@ var Projects = (function() {
     }
 
     function _fixFloat() {
-      _after.css("clear", "both");
+        _after.css("clear", "both");
     }
 
     return {
@@ -332,6 +332,20 @@ var Projects = (function() {
 
 })();
 
+// 
+// fixes for placeholder in ie
+// 
+var FixPlaceholders = (function() {
+    function _fixPlaceholders() {
+        $('input, textarea').placeholder();
+    }
+
+    return {
+        init: function() {
+            _fixPlaceholders();
+        }
+    }
+})();
 // 
 //Popup showing and hiding module
 // 
@@ -377,6 +391,7 @@ $(document).ready(function() {
 
     if ($.find('form').length > 0) {
         Validation.init();
+        FixPlaceholders.init();
     }
 
     if ($.find('#contacts-form').length > 0) {
@@ -390,4 +405,5 @@ $(document).ready(function() {
     if ($.find('#login-form').length > 0) {
         LoginForm.init();
     }
+    $('input, textarea').placeholder();
 });
