@@ -29,7 +29,7 @@ body {
 	position: relative;
 	min-height: 100%;
 	height: auto !important;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .wrapper:after {
@@ -48,15 +48,16 @@ body {
 /*header*/
 
 .page-header {
+	min-width: 960px;
 	height: 119px;
 	background: #eff3f7 url("../img/line.jpg") bottom center no-repeat;
 	margin-bottom: 39px;
-	position: relative; /*добавил в вебинаре*/
+	position: relative;
 }
 
 .header-wrap {
 	max-width: 1200px;
-	min-width: 960px; /*добавил -min и -max*/
+	min-width: 960px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -140,15 +141,15 @@ body {
 
 /*navigation*/
 .nav-list .nav-list-item {
-	height: 73px;
 }
 
 .nav-list-item .nav-list-link {
 	display: block;
 	font-size: 21px;
+	line-height: 1.2em;
 	text-decoration: none;
 	color: #959aa8;
-	padding: 29px 20px 25px 28px;
+	padding: 24px 20px 21px 28px;
 }
 
 .nav-list-item .nav-list-link:hover {
@@ -160,8 +161,8 @@ body {
 }
 
 .nav-list-item.active .nav-list-link {
-	padding-top: 30px;
-	padding-bottom: 24px;
+	padding-top: 27px;
+	padding-bottom: 20px;
 }
 
 .nav-list .nav-list-item.active .nav-list-link {
@@ -187,17 +188,15 @@ body {
 
 /*contacts*/
 .contacts .contacts-header {
-	height: 40px;
-	padding-top: 15px;
-	padding-left: 20px;
+	padding: 11px 5px 4px 20px;
 	background: #3ba8c0;
 	font-size: 21px;
+	line-height: 1.2em;
 	color: #fff;
 }
 
 .contacts-list .contacts-list-item {
-	height: 39px;
-	padding: 11px 0 0 60px;
+	padding: 11px 15px 10px 60px;
 }
 
 .contacts-list .contacts-list-item.mail {
@@ -210,7 +209,7 @@ body {
 
 .contacts-list .contacts-list-item.skype {
 	background: #51daf8 url("../img/skype.png") 28px 8px no-repeat;
-	height: 37px;
+	padding-bottom: 8px;
 }
 
 .contacts-list-item .contacts-list-link {
@@ -249,6 +248,7 @@ body {
 	display: inline-block;
 	border-bottom: 2px solid #3ba8c0;
 	font-size: 27px;
+	line-height: 1.2em;
 	color: #3ba8c0;
 }
 

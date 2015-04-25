@@ -1,14 +1,15 @@
-.box-body{
+.contacts .box-body{
 	padding-bottom: 120px;
 }
 
-.box-header {
+.contacts .box-header {
 	display: block;
-	padding-top: 55px;
+	padding-top: 47px;
+	padding-bottom: 42px;
 	background: #48cbe8;
 	border-bottom: 17px solid #67dffa;
-	height: 138px;
 	font-size: 27px;
+	line-height: 1.2em;
 	color: #fff;
 	text-align: center;
 	margin-bottom: 49px;

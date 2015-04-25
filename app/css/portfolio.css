@@ -1,9 +1,9 @@
-.box-header {
-	padding: 25px 24px 22px 26px;
+.portfolio .box-header {
+	padding: 18px 23px 15px 25px;
 	margin-bottom: 34px;
 }
 
-.box-body{
+.portfolio .box-body{
 	padding-left: 21px;
 	padding-bottom: 23px;
 }
@@ -24,6 +24,9 @@
 	margin-right: 0;	
 }
 
+.projects-item:nth-child(3n+1) {
+	clear:both;
+}
 .projects-item .project-preview {
 	display: block;
 	text-decoration: none;
@@ -55,16 +58,18 @@
 	background: rgba(65, 145, 187, 0.7);
 	width: 177px;
 	margin-left: 2px;
-	padding-top: 60px;
+	padding-top: 0px;
 	height: 125px;
 }
 
 .project-hover .project-hover-text {
+	margin-top: 30%;
+	display: inline-block;
 	border: 2px solid #fff;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	padding: 0 2px;
+	padding: 1px 7px;
 	font-size: 12px;
 	color: #fff;
 }
@@ -111,7 +116,7 @@
 	/*display: none;*/
 	position: relative;
 	width: 362px;
-	height: 493px;
+	min-height: 493px;
 	margin: 0 auto;
 	margin-top: 4%;
 	background: #eff3f7;
@@ -128,9 +133,9 @@
 .popup-header {
 	position: relative;
 	padding-left: 14px;
-	padding-top: 16px;
+	padding-top: 11px;
+	padding-bottom: 4px;
 	margin-bottom: 11px;
-	height: 53px;
 	background: #48cbe8;
 	border-bottom: 9px solid #67dffa;
 }
@@ -138,6 +143,7 @@
 .popup-header .popup-title{
 	color: #fff;
 	font-size: 25px;
+	line-height: 1.2em;
 	font-family: "fira_sansregular";
 }
 
@@ -156,6 +162,7 @@
 	margin: 0 auto;
 	font-size: 17px;
 	overflow: hidden;
+	margin-bottom: 28px;
 }
 
 .popup-error {

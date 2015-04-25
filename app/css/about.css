@@ -1,9 +1,9 @@
-.box-header {
-	padding: 25px 24px 24px 22px;
+.about .box-header {
+	padding: 19px 24px 17px 22px;
 	margin-bottom: 26px;
 }
 
-.box-body{
+.about .box-body{
 	padding-left: 56px;
 	padding-bottom: 23px;
 }
@@ -43,10 +43,16 @@
 
 .about-info-item .about-info-item-heading {
 	font-size: 17px;
+	max-width: 168px;
 	font-family: "fira_sansmedium";
 	margin-right: 15px;
 	display: inline-block;
 	float:left;
+}
+
+.about-info-item .about-info-item-content {
+	float: left;
+	max-width: 230px;
 }
 /*skills*/
 .about-info-item-content .skills {
@@ -106,8 +112,10 @@
 
 .box-list-item .place {
 	font-size: 17px;
+	max-width: 505px;
 }
 
 .box-list-item .duration {
 	font-family: "fira_sansultralight";
+	max-width: 505px;
 }

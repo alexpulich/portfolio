@@ -29,14 +29,20 @@ var UploadFix = (function() {
 //margin fixing for 3rd element in IE
 var Projects = (function() {
   var _thirdChild = $(".projects-item:nth-child(3n)");
+  var _after = $(".projects-item:nth-child(3n+1)");
 
   function _fixMargin() {
     _thirdChild.css("margin-right", "0");
   }
 
+  function _fixFloat() {
+    _after.css("clear", "both");
+  }
+
   return {
     init: function() {
       _fixMargin();
+      _fixFloat();
     }
   }
 
@@ -72,4 +78,5 @@ $(document).ready(function(){
   Projects.init();
   Popup.hide();
   UploadFix.init();
+  $('input, textarea').placeholder();
 });
