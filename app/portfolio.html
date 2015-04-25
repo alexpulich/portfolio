@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,41 @@
     <meta name="keywords" content="Веб-разработка, портфолио, многочегоещё">
     <meta name="author" content="Пулич Алексей">
     <!-- vendor CSS -->
+    <!-- build:css css/vendor.css -->
     <link rel="stylesheet" href="bower/normalize.css/normalize.css">
     <link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
+    <!-- endbuild -->
     <!-- fonts CSS -->
+    <!-- build:css fonts/fonts.css -->
     <link rel="stylesheet" href="fonts/fira.css">
     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- endbuild -->
     <!-- CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- endbuild -->
+    <!-- Modernizr -->
+    <!-- build:js js/modernizr.js -->
+    <script src="bower/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
     <!--[if IE]>
       <link rel="stylesheet" type="text/css" href="css/ie.css" />
     <![endif]-->
-
-    <!-- Modernizr.JS -->
-    <script src="bower/modernizr/modernizr.js"></script>
 </head>
+
 <body>
     <!--[if lt IE 7]>
         <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
         <![endif]-->
-
-        <!-- popup bg -->
+    <!-- popup bg -->
     <div class="popup-bg" id="popup-project">
         <!-- popup -->
         <div class="popup-box">
-        <div class="popup-success">
+            <div class="popup-success">
                 <div class="success-wrap">
                     <div class="success-heading">
                         <span class="success-title">
@@ -47,58 +58,56 @@
                     </div>
                 </div>
             </div>
-        <div class="add-project-popup" id="add-project-popup">
-            <div class="popup-header">
-                <div class="popup-title">Добавление проекта</div>
-                <a href="javascript:Popup.hide()" class="close-popup"></a>
-            </div>
-            <div class="popup-body">
-                <div class="popup-error">
-                    <div class="error-heading">
-                        <span class="error-title">
+            <div class="add-project-popup" id="add-project-popup">
+                <div class="popup-header">
+                    <div class="popup-title">Добавление проекта</div>
+                    <a href="javascript:Popup.hide()" class="close-popup"></a>
+                </div>
+                <div class="popup-body">
+                    <div class="popup-error">
+                        <div class="error-heading">
+                            <span class="error-title">
                             Ошибка!
                         </span>
-                        <a class="close-error">
-                        </a>
+                            <a class="close-error">
+                            </a>
+                        </div>
+                        <div class="error-body">
+                            Невозможно добавить проект.
+                        </div>
                     </div>
-                    <div class="error-body">
-                        Невозможно добавить проект.
-                    </div>
+                    <form action="" id="add-project-form" method="post" name="add-project-form">
+                        <div class="form-part">
+                            <label class="form-label" for="project_name">Название проекта</label>
+                            <input class="form-input" type="text" name="project_name" id="project_name" placeholder="Введите название" qtip-content="Введите название" qtip-position="left">
+                        </div>
+                        <div class="form-part">
+                            <label class="form-label" for="project_img ">Картинка проекта</label>
+                            <div class="fake-wrap">
+                                <div class="mask">
+                                    <input class="file-input-text" type="text" disabled value="Загрузите изображение">
+                                    <button class="send-file"></button>
+                                </div>
+                                <input class="form-input" type="file" name="upload" id="upload" placeholder="Загрузите изображение" qtip-content="Изображение" qtip-position="left">
+                            </div>
+                        </div>
+                        <div class="form-part">
+                            <label class="form-label" for="project_url">URL проекта</label>
+                            <input class="form-input" type="text" name="project_url" id="project_url" placeholder="Добавьте ссылку" qtip-content="Ссылка на проект" qtip-position="left">
+                        </div>
+                        <div class="form-part">
+                            <label class="form-label" for="project_desc">Описание</label>
+                            <textarea class="form-input" name="project_desc" id="project_desc" placeholder="Пара слов о вашем проекте" cols="33" rows="5" qtip-content="Описание проекта" qtip-position="left"></textarea>
+                        </div>
+                        <div class="form-part">
+                            <input class="form-input form-submit" type="submit" name="submit-project" id="submit-project" value="Добавить">
+                        </div>
+                    </form>
                 </div>
-                <form action="" id="add-project-form" method="post" name="add-project-form">
-                <div class="form-part">
-                    <label class="form-label" for="project_name">Название проекта</label>
-                    <input class="form-input" type="text" name="project_name" id="project_name" placeholder="Введите название" qtip-content="Введите название" qtip-position="left">
-                </div>
-                <div class="form-part">    
-                    <label class="form-label" for="project_img ">Картинка проекта</label>
-                    <div class="fake-wrap">
-                        <div class="mask">
-                              <input class="file-input-text" type="text" disabled value="Загрузите изображение">
-                              <button class="send-file"></button>
-                           </div>
-                        <input class="form-input" type="file" name="upload" id="upload" placeholder="Загрузите изображение" qtip-content="Изображение" qtip-position="left">
-                    </div>
-                </div>
-                <div class="form-part">
-                    <label class="form-label" for="project_url">URL проекта</label>
-                    <input class="form-input" type="text" name="project_url" id="project_url" placeholder="Добавьте ссылку" qtip-content="Ссылка на проект" qtip-position="left">
-                </div>
-                <div class="form-part">   
-                    <label class="form-label" for="project_desc">Описание</label>
-                    <textarea class="form-input" name="project_desc" id="project_desc" placeholder="Пара слов о вашем проекте" cols="33" rows="5" qtip-content="Описание проекта" qtip-position="left"></textarea>
-                </div>
-                <div class="form-part">
-                    <input class="form-input form-submit" type="submit" name="submit-project" id="submit-project" value="Добавить">
-                </div>
-                </form>
             </div>
-        </div>
         </div>
         <!-- end popup -->
     </div>
-
-
     <div class="wrapper">
         <!-- header -->
         <header class="page-header">
@@ -120,9 +129,8 @@
                         <a href="http://github.com/alexpulich" class="social-item-link gh" target="_blank">GitHub</a>
                     </li>
                 </ul>
-            </div>            
+            </div>
         </header>
-
         <div class="container">
             <!-- sidebar -->
             <aside class="sidebar">
@@ -140,7 +148,6 @@
                         </li>
                     </ul>
                 </nav>
-
                 <!-- contacts -->
                 <address class="contacts">
                     <div class="contacts-header">
@@ -159,7 +166,6 @@
                     </ul>
                 </address>
             </aside>
-
             <div class="main-content portfolio">
                 <section class="box">
                     <div class="box-header">
@@ -242,8 +248,6 @@
                                     </div>
                                 </a>
                             </li>
-
-
                             <li class="projects-item add-item">
                             </li>
                         </ul>
@@ -252,30 +256,27 @@
             </div>
         </div>
     </div>
-
     <footer class="page-footer">
         <div class="container">
             <div class="login">
                 <a href="/login.html" class="login-link">Войти</a>
             </div>
             <div class="copyright">
-                &#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его. 
+                &#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.
             </div>
         </div>
     </footer>
-    
-
-
-
-
-    
     <!-- scripts -->
     <!-- vendor js -->
+    <!-- build:js js/vendor.js -->
     <script src="bower/jquery/dist/jquery.min.js"></script>
     <script src="bower/qtip2/jquery.qtip.min.js"></script>
     <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <!-- endbuild -->
     <!-- js -->
-        
+    <!-- build:js js/main.js -->
     <script src="js/main.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>
