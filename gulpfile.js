@@ -2,9 +2,9 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     opn = require('opn'),
     useref = require('gulp-useref');
-    // gulpif = require('gulp-if'),
-    // uglify = require('gulp-uglify'),
-    // minifyCss = require('gulp-minify-css');
+// gulpif = require('gulp-if'),
+// uglify = require('gulp-uglify'),
+// minifyCss = require('gulp-minify-css');
 
 gulp.task('connect', function() {
     connect.server({
@@ -24,9 +24,9 @@ gulp.task('start-builded', function() {
     opn('http://localhost:8888')
 });
 
-gulp.task('build', function () {
+gulp.task('build', function() {
     var assets = useref.assets();
-    
+
     return gulp.src('app/*.html')
         .pipe(assets)
         // .pipe(gulpif('*.js', uglify()))

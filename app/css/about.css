@@ -1,121 +1,137 @@
 .about .box-header {
-	padding: 19px 24px 17px 22px;
-	margin-bottom: 26px;
+    padding: 19px 24px 17px 22px;
+    margin-bottom: 26px;
 }
 
-.about .box-body{
-	padding-left: 56px;
-	padding-bottom: 23px;
+.about .box-body {
+    padding-left: 56px;
+    padding-bottom: 23px;
 }
-	
 /*main info box*/
 /*myphoto*/
+
 .box-photo {
-	width: 150px;
-	height: 150px;
-	float: left;
-	margin: 16px 24px 0 0;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 16px 24px 0 0;
 }
 
 .photo-wrap {
-	width: 100%;
-	height: 100%;
-	border: 4px solid #33a7bc;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #33a7bc;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    overflow: hidden;
 }
-
 /*info about me*/
+
 .about-info {
-	float: left;
-	list-style: none;
+    float: left;
+    list-style: none;
 }
 
 .about-info-item {
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
-.about-info-item div{
-	display: inline-block;
+.about-info-item div {
+    display: inline-block;
 }
 
 .about-info-item .about-info-item-heading {
-	font-size: 17px;
-	max-width: 168px;
-	font-family: "fira_sansmedium";
-	margin-right: 15px;
-	display: inline-block;
-	float:left;
+    font-size: 17px;
+    max-width: 168px;
+    font-family: "fira_sansmedium";
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
 }
 
 .about-info-item .about-info-item-content {
-	float: left;
-	max-width: 230px;
+    float: left;
+    max-width: 230px;
 }
 /*skills*/
+
 .about-info-item-content .skills {
-	display: inline-block;
-	list-style: none;
-	width: 230px;
-	margin-top: 5px;
-	margin-left: 5px;
+    display: inline-block;
+    list-style: none;
+    width: 230px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .skills .skills-item {
-	font-family: "ProximaNovaCondensedSemibold";
-	font-size: 14px;
-	color: #fff;
-	display: inline-block;
-	padding: 1px 14px;
-	margin: 0 4px 7px 0;
-	background: rgb(59,168,192); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(59,168,192,1) 0%, rgba(58,165,189,1) 50%, rgba(46,140,162,1) 51%, rgba(46,140,162,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,168,192,1)), color-stop(50%,rgba(58,165,189,1)), color-stop(51%,rgba(46,140,162,1)), color-stop(100%,rgba(46,140,162,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(59,168,192,1) 0%,rgba(58,165,189,1) 50%,rgba(46,140,162,1) 51%,rgba(46,140,162,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(59,168,192,1) 0%,rgba(58,165,189,1) 50%,rgba(46,140,162,1) 51%,rgba(46,140,162,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(59,168,192,1) 0%,rgba(58,165,189,1) 50%,rgba(46,140,162,1) 51%,rgba(46,140,162,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom, rgba(59,168,192,1) 0%,rgba(58,165,189,1) 50%,rgba(46,140,162,1) 51%,rgba(46,140,162,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); /* IE6-9 */
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
+    font-family: "ProximaNovaCondensedSemibold";
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding: 1px 14px;
+    margin: 0 4px 7px 0;
+    background: rgb(59, 168, 192);
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(top, rgba(59, 168, 192, 1) 0%, rgba(58, 165, 189, 1) 50%, rgba(46, 140, 162, 1) 51%, rgba(46, 140, 162, 1) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(59, 168, 192, 1)), color-stop(50%, rgba(58, 165, 189, 1)), color-stop(51%, rgba(46, 140, 162, 1)), color-stop(100%, rgba(46, 140, 162, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, rgba(59, 168, 192, 1) 0%, rgba(58, 165, 189, 1) 50%, rgba(46, 140, 162, 1) 51%, rgba(46, 140, 162, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, rgba(59, 168, 192, 1) 0%, rgba(58, 165, 189, 1) 50%, rgba(46, 140, 162, 1) 51%, rgba(46, 140, 162, 1) 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, rgba(59, 168, 192, 1) 0%, rgba(58, 165, 189, 1) 50%, rgba(46, 140, 162, 1) 51%, rgba(46, 140, 162, 1) 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to bottom, rgba(59, 168, 192, 1) 0%, rgba(58, 165, 189, 1) 50%, rgba(46, 140, 162, 1) 51%, rgba(46, 140, 162, 1) 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2', GradientType=0);
+    /* IE6-9 */
+    
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
 }
-
-
 /*work experience and education boxes*/
+
 .box .box-list {
-	list-style: none;
+    list-style: none;
 }
 
 .box-list .box-list-item {
-	padding-left: 71px;
-	margin-bottom: 26px;
+    padding-left: 71px;
+    margin-bottom: 26px;
 }
 
 .box-list .box-list-item:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .box-list .box-list-item.work {
-	background: url("../img/work.png") left center no-repeat;
+    background: url("../img/work.png") left center no-repeat;
 }
 
 .box-list .box-list-item.uni {
-	background: url("../img/edu.png") left center no-repeat;
+    background: url("../img/edu.png") left center no-repeat;
 }
 
 .box-list .box-list-item.course {
-	background: url("../img/course.png") left center no-repeat;
+    background: url("../img/course.png") left center no-repeat;
 }
 
 .box-list-item .place {
-	font-size: 17px;
-	max-width: 505px;
+    font-size: 17px;
+    max-width: 505px;
 }
 
 .box-list-item .duration {
-	font-family: "fira_sansultralight";
-	max-width: 505px;
+    font-family: "fira_sansultralight";
+    max-width: 505px;
 }

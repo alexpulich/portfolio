@@ -1,17 +1,18 @@
 /* fix for projects hover effect*/
+
 .project-pic-wrap .project-hover {
-	bottom: -500px;
+    bottom: -500px;
 }
 
 .project-pic-wrap:hover .project-hover {
-	bottom: 0;
+    bottom: 0;
 }
 /*end  fix for projects hover effect*/
 
 .contacts-form-input {
-	padding-top: 12px;
+    padding-top: 12px;
 }
 
 .login-form-input {
-	padding-top: 20px;
+    padding-top: 20px;
 }
