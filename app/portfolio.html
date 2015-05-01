@@ -82,13 +82,13 @@
                             <input class="form-input" type="text" name="project_name" id="project_name" placeholder="Введите название" qtip-content="Введите название" qtip-position="left">
                         </div>
                         <div class="form-part">
-                            <label class="form-label" for="project_img ">Картинка проекта</label>
-                            <div class="fake-wrap">
-                                <div class="mask">
-                                    <input class="file-input-text" type="text" disabled value="Загрузите изображение">
-                                    <button class="send-file"></button>
-                                </div>
-                                <input class="form-input" type="file" name="upload" id="upload" placeholder="Загрузите изображение" qtip-content="Изображение" qtip-position="left">
+                            <div class="fileupload-wrapper" id="uploadfile">
+                                <span class="form-label">Картинка проекта</span>
+                                <label class="fileupload-lable">
+                                    <input id="fileupload" class="fileupload" type="file" name="files[]">
+                                    <input id="fileurl" type="hidden" name="fileurl">
+                                </label>
+                                <input id="filename" type="text" class="form-input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
                             </div>
                         </div>
                         <div class="form-part">

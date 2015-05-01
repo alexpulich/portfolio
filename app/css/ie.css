@@ -2,6 +2,9 @@
 
 .project-pic-wrap .project-hover {
     bottom: -500px;
+    right: 1px;
+    width: 181px;
+    height: 127px;
 }
 
 .project-pic-wrap:hover .project-hover {
@@ -15,4 +18,8 @@
 
 .login-form-input {
     padding-top: 20px;
+}
+
+.send-file {
+	height: 37px;
 }
