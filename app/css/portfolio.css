@@ -104,20 +104,13 @@
     color: #3ba8c0;
     font-size: 13px;
 }
-/*popup*/
 
-.popup-bg {
+/*popup*/
+.popup-box {
     display: none;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background: rgba(0, 132, 161, 0.4);
-    z-index: 9999;
 }
 
 .add-project-popup {
-    /*display: none;*/
-    
     position: relative;
     width: 362px;
     min-height: 493px;

@@ -40,74 +40,6 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
         <![endif]-->
-    <!-- popup bg -->
-    <div class="popup-bg" id="popup-project">
-        <!-- popup -->
-        <div class="popup-box">
-            <div class="popup-success">
-                <div class="success-wrap">
-                    <div class="success-heading">
-                        <span class="success-title">
-                            Ура!
-                        </span>
-                        <a class="close-success">
-                        </a>
-                    </div>
-                    <div class="success-body">
-                        Проект успешно добавлен
-                    </div>
-                </div>
-            </div>
-            <div class="add-project-popup" id="add-project-popup">
-                <div class="popup-header">
-                    <div class="popup-title">Добавление проекта</div>
-                    <a href="javascript:Popup.hide()" class="close-popup"></a>
-                </div>
-                <div class="popup-body">
-                    <div class="popup-error">
-                        <div class="error-heading">
-                            <span class="error-title">
-                            Ошибка!
-                        </span>
-                            <a class="close-error">
-                            </a>
-                        </div>
-                        <div class="error-body">
-                            Невозможно добавить проект.
-                        </div>
-                    </div>
-                    <form action="" id="add-project-form" method="post" name="add-project-form">
-                        <div class="form-part">
-                            <label class="form-label" for="project_name">Название проекта</label>
-                            <input class="form-input" type="text" name="project_name" id="project_name" placeholder="Введите название" qtip-content="Введите название" qtip-position="left">
-                        </div>
-                        <div class="form-part">
-                            <div class="fileupload-wrapper" id="uploadfile">
-                                <span class="form-label">Картинка проекта</span>
-                                <label class="fileupload-lable">
-                                    <input id="fileupload" class="fileupload" type="file" name="files[]">
-                                    <input id="fileurl" type="hidden" name="fileurl">
-                                </label>
-                                <input id="filename" type="text" class="form-input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
-                            </div>
-                        </div>
-                        <div class="form-part">
-                            <label class="form-label" for="project_url">URL проекта</label>
-                            <input class="form-input" type="text" name="project_url" id="project_url" placeholder="Добавьте ссылку" qtip-content="Ссылка на проект" qtip-position="left">
-                        </div>
-                        <div class="form-part">
-                            <label class="form-label" for="project_desc">Описание</label>
-                            <textarea class="form-input" name="project_desc" id="project_desc" placeholder="Пара слов о вашем проекте" cols="33" rows="5" qtip-content="Описание проекта" qtip-position="left"></textarea>
-                        </div>
-                        <div class="form-part">
-                            <input class="form-input form-submit" type="submit" name="submit-project" id="submit-project" value="Добавить">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- end popup -->
-    </div>
     <div class="wrapper">
         <!-- header -->
         <header class="page-header">
@@ -242,7 +174,7 @@
                                 </div>
                             </li>
                             <li class="projects-item">
-                                <a class="project-preview" href="javascript:Popup.show()">
+                                <a class="project-preview" href="">
                                     <div class="project-pic-wrap add-project">
                                         Добавить проект
                                     </div>
@@ -256,6 +188,71 @@
             </div>
         </div>
     </div>
+    <!-- popup -->
+    <div class="popup-box" id="popup-project">
+        <div class="popup-success">
+            <div class="success-wrap">
+                <div class="success-heading">
+                    <span class="success-title">
+                        Ура!
+                    </span>
+                    <a class="close-success">
+                    </a>
+                </div>
+                <div class="success-body">
+                    Проект успешно добавлен
+                </div>
+            </div>
+        </div>
+        <div class="add-project-popup" id="add-project-popup">
+            <div class="popup-header">
+                <div class="popup-title">Добавление проекта</div>
+                <a href="" class="close-popup b-close"></a>
+            </div>
+            <div class="popup-body">
+                <div class="popup-error">
+                    <div class="error-heading">
+                        <span class="error-title">
+                        Ошибка!
+                    </span>
+                        <a class="close-error">
+                        </a>
+                    </div>
+                    <div class="error-body">
+                        Невозможно добавить проект.
+                    </div>
+                </div>
+                <form action="" id="add-project-form" method="post" name="add-project-form">
+                    <div class="form-part">
+                        <label class="form-label" for="project_name">Название проекта</label>
+                        <input class="form-input" type="text" name="project_name" id="project_name" placeholder="Введите название" qtip-content="Введите название" qtip-position="left">
+                    </div>
+                    <div class="form-part">
+                        <div class="fileupload-wrapper" id="uploadfile">
+                            <span class="form-label">Картинка проекта</span>
+                            <label class="fileupload-lable">
+                                <input id="fileupload" class="fileupload" type="file" name="files[]">
+                                <input id="fileurl" type="hidden" name="fileurl">
+                            </label>
+                            <input id="filename" type="text" class="form-input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
+                        </div>
+                    </div>
+                    <div class="form-part">
+                        <label class="form-label" for="project_url">URL проекта</label>
+                        <input class="form-input" type="text" name="project_url" id="project_url" placeholder="Добавьте ссылку" qtip-content="Ссылка на проект" qtip-position="left">
+                    </div>
+                    <div class="form-part">
+                        <label class="form-label" for="project_desc">Описание</label>
+                        <textarea class="form-input" name="project_desc" id="project_desc" placeholder="Пара слов о вашем проекте" cols="33" rows="5" qtip-content="Описание проекта" qtip-position="left"></textarea>
+                    </div>
+                    <div class="form-part">
+                        <input class="form-input form-submit" type="submit" name="submit-project" id="submit-project" value="Добавить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end popup -->
     <footer class="page-footer">
         <div class="container">
             <div class="login">
@@ -272,6 +269,7 @@
     <script src="bower/jquery/dist/jquery.min.js"></script>
     <script src="bower/qtip2/jquery.qtip.min.js"></script>
     <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <script src="bower/bpopup/jquery.bpopup.min.js"></script>
     <!-- endbuild -->
     <!-- js -->
     <!-- build:js js/main.js -->
